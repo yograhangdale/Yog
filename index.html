@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yog Creative Photography — We Create Memories</title>
+  <meta name="description" content="Cinematic Wedding Films • Photography • Drone Shoots • Creative Storytelling by Yog Rahangdale">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets (order matters) -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/pricing-contact-footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ===================== DRONE INTRO ===================== -->
+  <div id="drone-intro">
+    <div class="drone-circle dc1"></div>
+    <div class="drone-circle dc2"></div>
+    <div class="drone-circle dc3"></div>
+    <div class="drone-circle dc4"></div>
+    <div class="drone-crosshair"></div>
+  </div>
+
+  <!-- ===================== CURSOR ===================== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===================== LOADER ===================== -->
+  <div id="loader">
+    <div class="loader-logo">YOG CREATIVE</div>
+    <div class="loader-bar">
+      <div class="loader-progress"></div>
+    </div>
+    <div class="loader-sub">Crafting your cinematic experience</div>
+  </div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">YOG <span>CREATIVE</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Portfolio</a></li>
+      <li><a href="#testimonials">Stories</a></li>
+      <li><a href="#pricing">Packages</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/917218512969" target="_blank" class="nav-cta">Book Now</a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ===================== MOBILE MENU ===================== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"        onclick="closeMobile()">About</a>
+    <a href="#services"     onclick="closeMobile()">Services</a>
+    <a href="#gallery"      onclick="closeMobile()">Portfolio</a>
+    <a href="#testimonials" onclick="closeMobile()">Stories</a>
+    <a href="#pricing"      onclick="closeMobile()">Packages</a>
+    <a href="#contact"      onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- ===================== FLOATING SOCIAL ===================== -->
+  <div class="float-social">
+    <a href="https://instagram.com/yogcreative" target="_blank" class="float-btn">
+      <span>📷</span>
+      <span class="float-btn-label">@yogcreative</span>
+    </a>
+    <a href="https://wa.me/917218512969" target="_blank" class="float-btn">
+      <span>💬</span>
+      <span class="float-btn-label">WhatsApp</span>
+    </a>
+    <a href="mailto:yogphotography07@gmail.com" class="float-btn">
+      <span>✉</span>
+      <span class="float-btn-label">Email</span>
+    </a>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div id="particles"></div>
+    <div class="lens-flare"></div>
+    <div class="film-grain"></div>
+    <div class="hero-video-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">✦ Yog Creative Photography ✦</div>
+      <h1 class="hero-headline">
+        We Create<br><em>Memories</em>
+      </h1>
+      <p class="hero-sub">
+        <span>Cinematic Wedding Films</span> • Photography • <span>Drone Shoots</span> • Creative Storytelling
+      </p>
+      <div class="hero-btns">
+        <a href="#gallery" class="btn-primary"><span>View Portfolio</span></a>
+        <a href="https://wa.me/917218512969" target="_blank" class="btn-secondary">Book Now</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== MARQUEE ===================== -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span class="marquee-text">✦ CINEMATIC WEDDING FILMS</span>
+      <span class="marquee-text">✦ DRONE CINEMATOGRAPHY</span>
+      <span class="marquee-text">✦ PRE-WEDDING SHOOTS</span>
+      <span class="marquee-text">✦ CREATIVE STORYTELLING</span>
+      <span class="marquee-text">✦ LUXURY PORTRAITS</span>
+      <span class="marquee-text">✦ EMOTIONAL MEMORIES</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="marquee-text">✦ CINEMATIC WEDDING FILMS</span>
+      <span class="marquee-text">✦ DRONE CINEMATOGRAPHY</span>
+      <span class="marquee-text">✦ PRE-WEDDING SHOOTS</span>
+      <span class="marquee-text">✦ CREATIVE STORYTELLING</span>
+      <span class="marquee-text">✦ LUXURY PORTRAITS</span>
+      <span class="marquee-text">✦ EMOTIONAL MEMORIES</span>
+    </div>
+  </div>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-image-wrap reveal-left">
+        <div class="about-image-bg"></div>
+        <div class="about-frame"></div>
+        <div class="about-initials">YR</div>
+        <div class="about-badge-img">
+          5+ <small>Years of<br>Storytelling</small>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-label reveal">About the Founder</span>
+        <h2 class="section-title reveal delay-1">The Man Behind<br>the <em>Lens</em></h2>
+        <div class="gold-line reveal delay-2"></div>
+        <p class="reveal delay-2">
+          In a world rushing past, <strong style="color:var(--gold);font-weight:500">Yog Rahangdale</strong> slows time. Born with a camera in his hands and poetry in his heart, Yog has spent years perfecting the art of capturing the invisible — the trembling breath before the vows, the grandmother's tearful smile, the first look that says everything words cannot.
+        </p>
+        <blockquote class="about-quote reveal delay-3">
+          "Every frame I capture is a love letter — to the moment, to the people in it, and to the memories that deserve to live forever."
+        </blockquote>
+        <p class="reveal delay-3">
+          Based in Maharashtra, Yog Creative Photography has become synonymous with cinematic grandeur and emotional depth. From sweeping drone vistas to intimate candid portraits, every project is approached as a feature film — your story, told with breathtaking visual poetry.
+        </p>
+        <p class="reveal delay-4">
+          Trained in cinematic color grading, aerial cinematography, and storytelling composition, Yog brings Hollywood-level production quality to every wedding, every pre-shoot, every milestone worth remembering.
+        </p>
+        <div class="about-stats reveal delay-5">
+          <div class="stat-item">
+            <div class="stat-num">500+</div>
+            <div class="stat-label">Weddings</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">12K+</div>
+            <div class="stat-label">Followers</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section id="services">
+    <div style="max-width:1200px;">
+      <span class="section-label reveal">What We Create</span>
+      <h2 class="section-title reveal delay-1">Our <em>Crafts</em></h2>
+      <div class="gold-line reveal delay-2"></div>
+    </div>
+    <div class="services-grid reveal delay-2">
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <div class="service-icon" data-icon="🎬"></div>
+        <div class="service-name">Cinematic Wedding Films</div>
+        <p class="service-desc">Netflix-quality wedding films that blend emotion, music, and light. Your love story told like a blockbuster — edited with cinematic color grading and atmospheric soundscapes.</p>
+        <a href="#contact" class="service-link">Enquire</a>
+      </div>
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <div class="service-icon" data-icon="📸"></div>
+        <div class="service-name">Wedding Photography</div>
+        <p class="service-desc">Candid, editorial, traditional — we capture every dimension of your wedding day with precision and artistry. Each photograph is a framed heirloom.</p>
+        <a href="#contact" class="service-link">Enquire</a>
+      </div>
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <div class="service-icon" data-icon="🚁"></div>
+        <div class="service-name">Drone Cinematography</div>
+        <p class="service-desc">Breathtaking aerial perspectives that transform your event into a grand visual spectacle. Licensed drone operations with cinematic 4K quality from above.</p>
+        <a href="#contact" class="service-link">Enquire</a>
+      </div>
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <div class="service-icon" data-icon="💑"></div>
+        <div class="service-name">Pre-Wedding Shoots</div>
+        <p class="service-desc">Romantic, artistic, and deeply personal — pre-wedding sessions that celebrate your unique bond. From golden hour fields to architectural masterpieces.</p>
+        <a href="#contact" class="service-link">Enquire</a>
+      </div>
+      <div class="service-card">
+        <div class="service-num">05</div>
+        <div class="service-icon" data-icon="🎭"></div>
+        <div class="service-name">Creative Portraits</div>
+        <p class="service-desc">Fashion-forward editorial portraits that reveal character and emotion. Professional lighting, conceptual direction, and post-production artistry.</p>
+        <a href="#contact" class="service-link">Enquire</a>
+      </div>
+      <div class="service-card">
+        <div class="service-num">06</div>
+        <div class="service-icon" data-icon="✨"></div>
+        <div class="service-name">Special Occasions</div>
+        <p class="service-desc">Engagements, anniversaries, birthdays, and corporate events captured with the same cinematic magic we bring to every occasion worth commemorating.</p>
+        <a href="#contact" class="service-link">Enquire</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section id="gallery">
+    <span class="section-label reveal">Visual Stories</span>
+    <h2 class="section-title reveal delay-1">Our <em>Portfolio</em></h2>
+    <div class="gold-line reveal delay-2"></div>
+
+    <div class="gallery-filter reveal delay-2">
+      <button class="filter-btn active" onclick="filterGallery('all',this)">All Work</button>
+      <button class="filter-btn" onclick="filterGallery('wedding',this)">Weddings</button>
+      <button class="filter-btn" onclick="filterGallery('prewedding',this)">Pre-Wedding</button>
+      <button class="filter-btn" onclick="filterGallery('drone',this)">Drone</button>
+      <button class="filter-btn" onclick="filterGallery('portrait',this)">Portraits</button>
+    </div>
+
+    <div class="masonry-grid" id="galleryGrid">
+      <div class="gallery-item gi-tall gal-1 reveal"        data-cat="wedding"    onclick="openLightbox('The Sacred Vows')">
+        <div class="gallery-placeholder"><div class="gallery-inner"><div class="gallery-inner-icon">👰</div><div class="gallery-category">Wedding</div></div></div>
+        <div class="gallery-overlay"><div class="gallery-caption">The Sacred Vows</div></div>
+      </div>
+      <div class="gallery-item gi-wide gal-2 reveal delay-1" data-cat="prewedding" onclick="openLightbox('Golden Hour Love')">
+        <div class="gallery-placeholder"><div class="gallery-inner"><div class="gallery-inner-icon">💑</div><div class="gallery-category">Pre-Wedding</div></div></div>
+        <div class="gallery-overlay"><div class="gallery-caption">Golden Hour Love</div></div>
+      </div>
+      <div class="gallery-item gi-sq   gal-3 reveal delay-2" data-cat="drone"      onclick="openLightbox('Above the Clouds')">
+        <div class="gallery-placeholder"><div class="gallery-inner"><div class="gallery-inner-icon">🚁</div><div class="gallery-category">Drone</div></div></div>
+        <div class="gallery-overlay"><div class="gallery-caption">Above the Clouds</div></div>
+      </div>
+      <div class="gallery-item gi-port gal-4 reveal delay-1" data-cat="portrait"   onclick="openLightbox('Soulful Portrait')">
+        <div class="gallery-placeholder"><div class="gallery-inner"><div class="gallery-inner-icon">🎭</div><div class="gallery-category">Portrait</div></div></div>
+        <div class="gallery-overlay"><div class="gallery-caption">Soulful Portrait</div></div>
+      </div>
+      <div class="gallery-item gi-land gal-1 reveal delay-2" data-cat="wedding"    onclick="openLightbox('Mandap Moments')">
+        <div class="gallery-placeholder"><div class="gallery-inner"><div class="gallery-inner-icon">🔥</div><div class="gallery-category">Wedding</div></div></div>
+        <div class="gallery-overlay"><div class="gallery-caption">Mandap Moments</div></div>
+      </div>
+      <div class="gallery-item gi-tall gal-2 reveal delay-3" data-cat="prewedding" onclick="openLightbox('Monsoon Romance')">
+        <div class="gallery-placeholder"><div class="gallery-inner"><div class="gallery-inner-icon">🌧️</div><div class="gallery-category">Pre-Wedding</div></div></div>
+        <div class="gallery-overlay"><div class="gallery-caption">Monsoon Romance</div></div>
+      </div>
+      <div class="gallery-item gi-wide gal-3 reveal delay-1" data-cat="drone"      onclick="openLightbox('Aerial Grand Vista')">
+        <div class="gallery-placeholder"><div class="gallery-inner"><div class="gallery-inner-icon">🌄</div><div class="gallery-category">Drone</div></div></div>
+        <div class="gallery-overlay"><div class="gallery-caption">Aerial Grand Vista</div></div>
+      </div>
+      <div class="gallery-item gi-sq   gal-4 reveal delay-2" data-cat="wedding"    onclick="openLightbox('Bridal Glow')">
+        <div class="gallery-placeholder"><div class="gallery-inner"><div class="gallery-inner-icon">👑</div><div class="gallery-category">Wedding</div></div></div>
+        <div class="gallery-overlay"><div class="gallery-caption">Bridal Glow</div></div>
+      </div>
+      <div class="gallery-item gi-port gal-1 reveal delay-3" data-cat="portrait"   onclick="openLightbox('Editorial Vision')">
+        <div class="gallery-placeholder"><div class="gallery-inner"><div class="gallery-inner-icon">📸</div><div class="gallery-category">Portrait</div></div></div>
+        <div class="gallery-overlay"><div class="gallery-caption">Editorial Vision</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section id="testimonials">
+    <div style="text-align:center; max-width:600px; margin:0 auto;">
+      <span class="section-label reveal">Client Stories</span>
+      <h2 class="section-title reveal delay-1" style="text-align:center;">Love <em>Letters</em> to Us</h2>
+      <div class="gold-line reveal delay-2" style="margin:24px auto;"></div>
+    </div>
+    <div class="testimonials-track-wrap reveal delay-2">
+      <div class="testimonials-track">
+        <div class="testi-card">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Yog didn't just film our wedding — he made a masterpiece. Every time we watch it, we fall in love all over again. The cinematic quality is beyond anything we imagined.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">PR</div>
+            <div><div class="testi-name">Priya & Rohan Sharma</div><div class="testi-event">Wedding • Nagpur 2024</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Our pre-wedding shoot felt like walking through a Bollywood film. Yog has this magical ability to make you forget the camera exists and captures pure, raw emotion.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AM</div>
+            <div><div class="testi-name">Ananya & Mihir</div><div class="testi-event">Pre-Wedding • Mumbai 2024</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">The drone shots at our wedding were absolutely breathtaking. The aerial footage looked like something from a Netflix documentary. Truly world-class work.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SK</div>
+            <div><div class="testi-name">Sunita & Karan Desai</div><div class="testi-event">Wedding • Pune 2023</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">We booked Yog based on Instagram and he exceeded every expectation. Professional, creative, and deeply passionate about his craft. Couldn't recommend more highly.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">NV</div>
+            <div><div class="testi-name">Neha & Vikram</div><div class="testi-event">Wedding • Amravati 2024</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">The color grading, the music, the editing — everything felt like a luxury film. Our families watch our wedding video every anniversary. It's our most precious possession.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">RS</div>
+            <div><div class="testi-name">Ritu & Siddharth</div><div class="testi-event">Cinematic Film • 2023</div></div>
+          </div>
+        </div>
+        <!-- Duplicated for infinite scroll -->
+        <div class="testi-card">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Yog didn't just film our wedding — he made a masterpiece. Every time we watch it, we fall in love all over again. The cinematic quality is beyond anything we imagined.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">PR</div>
+            <div><div class="testi-name">Priya & Rohan Sharma</div><div class="testi-event">Wedding • Nagpur 2024</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">Our pre-wedding shoot felt like walking through a Bollywood film. Yog has this magical ability to make you forget the camera exists and captures pure, raw emotion.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AM</div>
+            <div><div class="testi-name">Ananya & Mihir</div><div class="testi-event">Pre-Wedding • Mumbai 2024</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">The drone shots at our wedding were absolutely breathtaking. The aerial footage looked like something from a Netflix documentary. Truly world-class work.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SK</div>
+            <div><div class="testi-name">Sunita & Karan Desai</div><div class="testi-event">Wedding • Pune 2023</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">We booked Yog based on Instagram and he exceeded every expectation. Professional, creative, and deeply passionate about his craft. Couldn't recommend more highly.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">NV</div>
+            <div><div class="testi-name">Neha & Vikram</div><div class="testi-event">Wedding • Amravati 2024</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote-mark">"</div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">The color grading, the music, the editing — everything felt like a luxury film. Our families watch our wedding video every anniversary. It's our most precious possession.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">RS</div>
+            <div><div class="testi-name">Ritu & Siddharth</div><div class="testi-event">Cinematic Film • 2023</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING ===================== -->
+  <section id="pricing">
+    <div style="text-align:center; max-width:600px; margin:0 auto;">
+      <span class="section-label reveal">Investment</span>
+      <h2 class="section-title reveal delay-1" style="text-align:center;">Choose Your <em>Package</em></h2>
+      <div class="gold-line reveal delay-2" style="margin:24px auto;"></div>
+      <p class="reveal delay-3" style="color:var(--muted);font-size:14px;line-height:1.8;">Every love story is unique. Our packages are crafted to honor that — contact us for a custom quote tailored to your vision.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card reveal delay-1">
+        <div class="price-tier">Essential</div>
+        <div class="price-name">Silver</div>
+        <div class="price-amount"><sup>₹</sup>45,000</div>
+        <div class="price-desc">Perfect for intimate ceremonies</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li>8-hour photography coverage</li>
+          <li>400+ edited photographs</li>
+          <li>Online gallery delivery</li>
+          <li>2 cinematographers</li>
+          <li>3-minute highlight reel</li>
+          <li>Digital delivery in 30 days</li>
+        </ul>
+        <a href="https://wa.me/917218512969" target="_blank" class="btn-secondary" style="display:block;text-align:center;">Book Now</a>
+      </div>
+      <div class="price-card featured reveal delay-2">
+        <div class="price-badge">Most Popular</div>
+        <div class="price-tier">Premium</div>
+        <div class="price-name">Gold</div>
+        <div class="price-amount"><sup>₹</sup>90,000</div>
+        <div class="price-desc">Full-day luxury experience</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li>Full-day photo + video coverage</li>
+          <li>800+ edited photographs</li>
+          <li>Cinematic wedding film (10 min)</li>
+          <li>Drone cinematography</li>
+          <li>Pre-wedding shoot included</li>
+          <li>USB drive + print album</li>
+          <li>Priority 21-day delivery</li>
+        </ul>
+        <a href="https://wa.me/917218512969" target="_blank" class="btn-primary" style="display:block;text-align:center;"><span>Book Now</span></a>
+      </div>
+      <div class="price-card reveal delay-3">
+        <div class="price-tier">Exclusive</div>
+        <div class="price-name">Platinum</div>
+        <div class="price-amount"><sup>₹</sup>1,50,000</div>
+        <div class="price-desc">The ultimate cinematic experience</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li>2-day full coverage</li>
+          <li>1500+ edited photographs</li>
+          <li>Full-length cinematic film (20 min)</li>
+          <li>Multiple drone sessions</li>
+          <li>Pre + post wedding coverage</li>
+          <li>Luxury print album (30 pages)</li>
+          <li>Same-day highlight reel</li>
+          <li>Dedicated 15-day delivery</li>
+        </ul>
+        <a href="https://wa.me/917218512969" target="_blank" class="btn-secondary" style="display:block;text-align:center;">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INSTAGRAM ===================== -->
+  <section id="instagram">
+    <div style="text-align:center;">
+      <span class="section-label reveal">Follow the Journey</span>
+      <h2 class="section-title reveal delay-1" style="text-align:center;"><em>@yogcreative</em></h2>
+      <div class="gold-line reveal delay-2" style="margin:24px auto;"></div>
+    </div>
+    <div class="insta-grid reveal delay-2" style="margin:0 auto;">
+      <div class="insta-item" onclick="window.open('https://instagram.com/yogcreative','_blank')">
+        <div class="insta-bg" style="background:linear-gradient(135deg,#1a1200,#2d2000);"></div>
+        <div class="insta-hover"><div class="insta-icon">💍</div></div>
+      </div>
+      <div class="insta-item" onclick="window.open('https://instagram.com/yogcreative','_blank')">
+        <div class="insta-bg" style="background:linear-gradient(135deg,#0d0d1a,#1a1030);"></div>
+        <div class="insta-hover"><div class="insta-icon">🎬</div></div>
+      </div>
+      <div class="insta-item" onclick="window.open('https://instagram.com/yogcreative','_blank')">
+        <div class="insta-bg" style="background:linear-gradient(135deg,#0a1a0a,#1a3020);"></div>
+        <div class="insta-hover"><div class="insta-icon">🚁</div></div>
+      </div>
+      <div class="insta-item" onclick="window.open('https://instagram.com/yogcreative','_blank')">
+        <div class="insta-bg" style="background:linear-gradient(135deg,#1a0a0a,#301520);"></div>
+        <div class="insta-hover"><div class="insta-icon">💑</div></div>
+      </div>
+      <div class="insta-item" onclick="window.open('https://instagram.com/yogcreative','_blank')">
+        <div class="insta-bg" style="background:linear-gradient(135deg,#1a1000,#2a1a00);"></div>
+        <div class="insta-hover"><div class="insta-icon">👑</div></div>
+      </div>
+      <div class="insta-item" onclick="window.open('https://instagram.com/yogcreative','_blank')">
+        <div class="insta-bg" style="background:linear-gradient(135deg,#0f0f20,#151030);"></div>
+        <div class="insta-hover"><div class="insta-icon">✨</div></div>
+      </div>
+    </div>
+    <div class="insta-follow reveal" style="margin-top:40px;text-align:center;">
+      <a href="https://instagram.com/yogcreative" target="_blank" class="insta-handle">Follow @yogcreative</a>
+      <div class="insta-tag">For daily cinematic stories and behind the scenes</div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact">
+    <div style="max-width:1100px;margin:0 auto;">
+      <span class="section-label reveal">Get In Touch</span>
+      <h2 class="section-title reveal delay-1">Let's Create Your <em>Story</em></h2>
+      <div class="gold-line reveal delay-2"></div>
+      <div class="contact-grid" style="margin-top:60px;">
+
+        <div class="contact-info reveal-left">
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div>
+              <div class="contact-label">WhatsApp / Call</div>
+              <a href="https://wa.me/917218512969" target="_blank" class="contact-val">+91 72185 12969</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:yogphotography07@gmail.com" class="contact-val">yogphotography07@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📷</div>
+            <div>
+              <div class="contact-label">Instagram</div>
+              <a href="https://instagram.com/yogcreative" target="_blank" class="contact-val">@yogcreative</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-val" style="cursor:default;">Nagpur, Maharashtra, India</div>
+            </div>
+          </div>
+          <a href="https://wa.me/917218512969" target="_blank" class="btn-primary" style="display:block;text-align:center;margin-top:32px;">
+            <span>💬 Chat on WhatsApp</span>
+          </a>
+          <div class="map-container" style="margin-top:32px;">
+            <div class="map-grid-lines"></div>
+            <div class="map-placeholder" style="position:relative;z-index:1;">
+              <div class="map-pin">📍</div>
+              <div class="map-text">Nagpur, Maharashtra</div>
+              <a href="https://maps.google.com/?q=Nagpur+Maharashtra" target="_blank"
+                 style="font-size:11px;color:var(--gold);letter-spacing:0.2em;display:block;margin-top:12px;text-decoration:none;">
+                View on Maps →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal-right">
+          <div class="form-group">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-input" placeholder="Enter your full name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-input" placeholder="+91 00000 00000">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Event Type</label>
+            <input type="text" class="form-input" placeholder="Wedding, Pre-Wedding, Portrait...">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Event Date</label>
+            <input type="text" class="form-input" placeholder="DD / MM / YYYY">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Your Message</label>
+            <textarea class="form-textarea" placeholder="Tell us about your vision, your story, your dream..."></textarea>
+          </div>
+          <button class="btn-primary" style="width:100%;padding:18px;" onclick="submitForm()">
+            <span>✦ Send Your Story</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer-logo">YOG CREATIVE</div>
+    <div class="footer-tagline">"We Create Memories"</div>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Portfolio</a></li>
+      <li><a href="#pricing">Packages</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://instagram.com/yogcreative" target="_blank">Instagram</a></li>
+    </ul>
+    <div class="footer-gold-line"></div>
+    <div class="footer-copy">© 2025 Yog Creative Photography · All Rights Reserved</div>
+    <div class="footer-craft">Crafted with passion by <span>Yog Creative Photography</span></div>
+  </footer>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div id="lightbox" onclick="closeLightbox(event)">
+    <div class="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open')">✕</div>
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <div class="lightbox-img-area">
+        <div class="lightbox-img-icon">🖼</div>
+      </div>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- ===================== SCRIPTS (load order matters) ===================== -->
+  <script src="js/loader.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/scroll-reveal.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/contact.js"></script>
+
+</body>
+</html>
